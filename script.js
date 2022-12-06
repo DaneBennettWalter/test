@@ -34,7 +34,7 @@ let pushShift = () => {
     Math.random() * 0.9 + 0.1
   );
 }
-let pts = new Array(50000).fill().map(p => {
+let pts = new Array(25000).fill().map(p => {
   sizes.push(Math.random() * 1.5 + 0.5);
   pushShift();
   return new THREE.Vector3().randomDirection().multiplyScalar(Math.random() * 0.5 + 9.5);
